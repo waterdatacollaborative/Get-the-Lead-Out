@@ -20582,18 +20582,24 @@ let hashmap = {};
    }
  });
 
-mapboxgl.accessToken = 'pk.eyJ1IjoibG9iZW5pY2hvdSIsImEiOiJjajdrb2czcDQwcHR5MnFycmhuZmo4eWwyIn0.nUf9dWGNVRnMApuhQ44VSw';
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2FkaWUtZ2lsbCIsImEiOiJjamtlOXhsdTczOWJiM3dtazU2ODZiZ2dzIn0.20B7rRYqEidFxaHOXuGKkA';
 const map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/sadie-gill/cjkeaodtodv792sqkkg4yara2', // stylesheet location
     center: [-122.462262, 37.749006], // starting position [lng, lat]
-    zoom: 11.8 // starting zoom
+    zoom: 11.3 // starting zoom
 });
 
 map.on('load', () => {
+
   map.addSource('schools', {
     type: 'vector',
-    url: 'mapbox://lobenichou.73qwb26q'
+    url: 'mapbox://sadie-gill.dfuwd3qi'
+  });
+
+  map.addSource('schoolsHover', {
+    type: 'vector',
+    url: 'mapbox://sadie-gill.dfuwd3qi'
   });
 
 
@@ -20616,16 +20622,16 @@ map.on('load', () => {
   // }, 'waterway-label')
 
 
-  map.loadImage('blue_drop.png', (error, image) => {
+  map.loadImage('/img/blue_drop.png', (error, image) => {
    if (error) throw error;
      map.addImage('blueDrop', image);
-   map.loadImage('red_drop.png', (error, image) => {
+   map.loadImage('/img/red_drop.png', (error, image) => {
      map.addImage('redDrop', image);
      map.addLayer({
        'id': 'schoolLayer',
        'type': 'symbol',
        'source': 'schools',
-       'source-layer': 'sfusd_lead_sampling-bk6jb7',
+       'source-layer': 'school_lookup-d99wed',
        'layout': {
          "icon-image": [
            'case',
@@ -20642,8 +20648,8 @@ map.on('load', () => {
      map.addLayer({
        'id': 'schoolLayerHover',
        'type': 'symbol',
-       'source': 'schools',
-       'source-layer': 'sfusd_lead_sampling-bk6jb7',
+       'source': 'schoolsHover',
+       'source-layer': 'school_lookup-d99wed',
        'layout': {
          "icon-image": [
            'case',
@@ -20669,10 +20675,44 @@ map.on('mouseenter', 'schoolLayer', function(e) {
     map.setFilter('schoolLayerHover', ['==', 'id', hoveredId]);
     map.setLayoutProperty('schoolLayerHover', 'icon-size', .25)
     const schoolList = hashmap[`SFUSD${e.features[0].properties.id}`];
-    console.log(schoolList)
-    const content = schoolList.forEach((school) => {
-      return `<h4>${school.geo_school_name}</h4>`;
-    })
+    console.log(schoolList);
+    // {
+    //   "fw_id": 931,
+    //   "school_district": "SFUSD",
+    //   "school_name": "Yick Wo ES",
+    //   "sample_point_name": "Yick Wo ES - Site E",
+    //   "sample_date": "NA",
+    //   "Pb (µg/L)": "NA",
+    //   "result": "NA",
+    //   "investigative_sample_number": "NA",
+    //   "comments": "Site not indicated by school",
+    //   "geo_school_name": "Yick Wo Elementary School",
+    //   "address": "2245 JONES ST, SAN FRANCISCO, CA 94133",
+    //   "lat": 37.80196,
+    //   "lon": -122.4166107,
+    //   "id": 131,
+    //   "lead_present": "FALSE"
+    // }
+    const content = `
+      <h5>${schoolList[0].geo_school_name}</h5>
+      <table class='table table--fixed'>
+        <thead>
+          <tr>
+            <th>Site</th>
+            <th>Sample Date</th>
+            <th>Pb (µg/L)</th>
+          </tr>
+        </thead>
+        <tbody>
+      ${schoolList.map(school  =>
+        `<tr>
+          <td>${school.sample_point_name}</td>
+          <td>${school.sample_date}</td>
+          <td>${school['Pb (µg/L)']}</td>
+        </tr>`
+    ).join('')}
+    </tbody>
+  </table>`
     console.log(content);
     document.getElementById('key').innerHTML = content;
  });
