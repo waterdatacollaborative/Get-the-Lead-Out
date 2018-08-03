@@ -20699,7 +20699,7 @@ map.on('mouseenter', 'schoolLayer', function(e) {
     // }
     const content = `
       <h5>${schoolList[0].geo_school_name}</h5>
-      <table class='table table--fixed'>
+      <table class='table table--fixed table--dark bg-darken50'>
         <thead>
           <tr>
             <th>Site</th>
