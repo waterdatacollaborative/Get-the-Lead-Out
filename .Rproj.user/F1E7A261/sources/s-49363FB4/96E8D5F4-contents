@@ -1,0 +1,48 @@
+library(tidycensus)
+library(tidyverse)
+
+# acsracePerc <- c(Hispanic = "DP05_0066P",
+#              White = "DP05_0072P",
+#              Black = "DP05_0073P",
+#              Asian = "DP05_0075P",
+#              AmericanIndian = "DP05_0074P",
+#              PacificIslander = "DP05_0076P",
+#              Others = "DP05_0077P",
+#              TwoOrMore = "DP05_0078P")
+# 
+# acsraceCount <- c(Hispanic = "B03002_012",
+#              White = "B03002_003",
+#              Black = "B03002_004",
+#              Asian = "B03002_006",
+#              AmericanIndian = "B03002_005",
+#              PacificIslander = "B03002_007",
+#              TwoOrMore = "B03002_009")
+
+cal_zips <- paste0("^", 900:961, collapse = "|")
+
+nv_zips <- paste0("^", 889:898, collapse = "|")
+
+
+# ca_zip_ethnicity_acs_count <- get_acs(geography = "zcta", variables = acsraceCount) %>%
+#   filter(str_detect(GEOID, cal_zips))
+# 
+# nv_zip_ethnicity_acs <- get_acs(geography = "zcta", variables = acsrace) %>%
+#   filter(str_detect(GEOID, nv_zips))
+
+ca_zip_pop <- get_acs(geography = "zcta", variables = 'B01001_001') %>%
+  filter(str_detect(GEOID, cal_zips))
+
+nv_zip_pop <- get_acs(geography = "zcta", variables = 'B01001_001') %>%
+  filter(str_detect(GEOID, nv_zips))
+
+
+# nv_county_ethnicity_acs <- get_acs(geography = "county", state = "NV", variables = acsrace)
+# ca_county_ethnicity_acs <- get_acs(geography = "county", state = "CA", variables = acsrace)
+# 
+# 
+# write.csv(ca_zip_ethnicity_acs_count, file = "ca_zip_ethnicity_acs_count.csv")
+# write.csv(nv_zip_ethnicity_acs, file = "nv_zip_ethnicity_acs.csv")
+# write.csv(nv_county_ethnicity_acs, file = "nv_county_ethnicity_acs.csv")
+# write.csv(ca_county_ethnicity_acs, file = "ca_county_ethnicity_acs.csv")
+write.csv(nv_zip_pop, file = "nv_zip_pop.csv")
+write.csv(ca_zip_pop, file = "ca_zip_pop.csv")

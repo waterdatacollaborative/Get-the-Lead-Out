@@ -1,0 +1,25 @@
+library(tidyverse)
+
+countyRace <- read_csv("/Users/lobenichou/Documents/county_race_reg.csv") 
+
+
+countyRace %>% View()  
+gather(race, perc, -county) %>% 
+  mutate(perc = perc / 100) # %>% 
+  spread(race, perc)
+
+countyRace2 <- countyRace
+countyRace2$county = NULL
+plot(countyRace2)
+cor(countyRace2)
+
+model  <- lm(percDonor ~ ., data=countyRace2)
+
+cmax <- countyRace2[countyRace2$percDonor > 0.5,]
+
+
+colMeans(cmax)
+
+
+xmin <- countyRace2[countyRace2$percDonor < 0.5, ]
+colMeans(xmin)

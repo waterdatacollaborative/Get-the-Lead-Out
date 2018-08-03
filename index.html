@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>California Water Challenge</title>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/5.1.5/turf.min.js"></script> -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
+  <!-- <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.2.0/mapbox-gl-geocoder.min.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.2.0/mapbox-gl-geocoder.css' type='text/css' /> -->
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <style>
+  body { margin:0; padding:0; }
+   #map { position:absolute; top:0; bottom:0; width:100%; }
+   #text {color: #6B6C72; position: absolute; top: 0; left: 0; width: 30%; height: 100%; background-color: rgba(246, 246, 246, 0.75);padding: 10px;}
+  #key {color: #6B6C72; position: absolute; top: 0; right: 0; width: 20%; height: 200px; background-color: rgba(246, 246, 246, 0.75); }
+  #img {
+    height: 100px;
+    width: auto;
+  }
+  .center {
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div id="key"></div>
+  <div id="text">
+    <div class="center">
+      <img id="img" src="image.png" alt="logo">
+    </div>
+
+    <h2>There is no safe level of lead</h2>
+
+    <p>We know that even tiny amounts of lead can cause a permanent drop in a child's IQ.
+    Lead exposure is linked to behavioral issues, ADHD, anxiety and depression. </p>
+
+    <p>San Francisco was one of the first districts to test, and what they found was alarming. Several schools found very high levels of lead. A third of the schools detected some lead in the drinking water.
+    </p>
+
+    <h3>The solution?</h3>
+    <p>We need to get the lead out. Most of the lead found in school drinking water comes from the plumbing and pipes. In California, some lead was permitted in parts until 2010. While we are surrounded by lead in our environment, our children's health is at risk. Removing the old lead pipes and fixtures is the only way to ensure our children's health is protected. This will cost money, but our kid's health is worth it.</p>
+
+    <p>When we get the lead out, we make our children's future brighter and healthier. And that is worth paying for.</p>
+
+    <h3>Resources:</h3>
+    <p>Here is the link to the old press release with link to the back to school toolkit: https://calpirgedfund.org/resources/caf/back-school-toolkit</p>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

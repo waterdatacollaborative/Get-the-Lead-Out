@@ -1,0 +1,63 @@
+library(tidycensus)
+library(tidyverse)
+library(plyr)
+library(reshape2)
+
+
+census_api_key("9b2da708b667a3dab3e2a9e81b30a1c4a732c34e", install = TRUE)
+varsAge <- c("B01001_006", 
+             "B01001_007", 
+             "B01001_008",
+             "B01001_009",
+             "B01001_010",
+             "B01001_011",
+             "B01001_012",
+             "B01001_013",
+             "B01001_014",
+             "B01001_015",
+             "B01001_016",
+             "B01001_017",
+             "B01001_018",
+             "B01001_019",
+             "B01001_020",
+             "B01001_021",
+             "B01001_022",
+             "B01001_023",
+             "B01001_024",
+             "B01001_025",
+             "B01001_030",
+             "B01001_031",
+             "B01001_032",
+             "B01001_033",
+             "B01001_034",
+             "B01001_035",
+             "B01001_036",
+             "B01001_037",
+             "B01001_038",
+             "B01001_039",
+             "B01001_040",
+             "B01001_041",
+             "B01001_042",
+             "B01001_043",
+             "B01001_044",
+             "B01001_045",
+             "B01001_046",
+             "B01001_047",
+             "B01001_048",
+             "B01001_049")
+
+i <- 1
+results <- list()
+
+for (ages in varsAge) {
+  print(ages)
+  usPop <- get_acs(geography = "zcta", variables = ages)
+  results[[i]] <- usPop
+  i = i+1
+}
+
+mergedResults <- ldply(results, data.frame)
+
+sumResults <- ddply(mergedResults, .(NAME), summarise, total=sum(estimate))
+
+write.csv(sumResults, file = "us_pop_zip.csv")

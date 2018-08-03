@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1532640173386.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "96E8D5F4",
+    "lastKnownWriteTime" : 1532640772,
+    "last_content_update" : 1532640772901,
+    "path" : "~/Desktop/ethnicity.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "39,59",
+        "scrollLine" : "7"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

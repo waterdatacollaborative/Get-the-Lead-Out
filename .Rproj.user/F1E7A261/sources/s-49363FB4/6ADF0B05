@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1532460846758.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6ADF0B05",
+    "lastKnownWriteTime" : 1532735116,
+    "last_content_update" : 1532735259319,
+    "path" : "~/Documents/caliWaterChallenge/schoolLookup.R",
+    "project_path" : "schoolLookup.R",
+    "properties" : {
+        "cursorPosition" : "20,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
