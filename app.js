@@ -20586,7 +20586,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2FkaWUtZ2lsbCIsImEiOiJjamtlOXhsdTczOWJiM3dta
 const map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/sadie-gill/cjkeaodtodv792sqkkg4yara2', // stylesheet location
-    center: [-122.462262, 37.749006], // starting position [lng, lat]
+    center: [-122.442262, 37.749006], // starting position [lng, lat]
     zoom: 11.3 // starting zoom
 });
 
@@ -20669,6 +20669,10 @@ let hoveredId = null;
 map.on('mouseenter', 'schoolLayer', function(e) {
      // Change the cursor style as a UI indicator.
     map.getCanvas().style.cursor = 'pointer';
+    if (document.getElementById('key').classList.contains('opacity0')) {
+      document.getElementById('key').classList.remove('opacity0');
+      document.getElementById('key').classList.add('opacity100');
+    }
 
     if (e.features[0].properties.id === hoveredId) return;
     hoveredId = e.features[0].properties.id;

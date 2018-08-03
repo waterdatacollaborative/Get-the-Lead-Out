@@ -26,12 +26,11 @@
     }
 
     #text {
-
       position: absolute;
       top: 0;
       left: 0;
       width: 30%;
-      height: 100%;
+      height: 50%;
       padding: 10px;
     }
 
@@ -40,7 +39,7 @@
       top:0;
       right:0;
       width:30%;
-      height:300px;
+      height:100%;
       overflow: auto;
     }
 
@@ -58,8 +57,8 @@
 </head>
 <body class="prose color-gray-dark">
   <div id="map"></div>
-  <div id="key" class="py12 px12 bg-gray-faint"></div>
-  <div class="py12 px12 absolute bg-gray-faint bottom right">
+  <div id="key" class="py12 px12 bg-gray-faint opacity0"></div>
+  <div class="py24 px24 absolute bg-gray-faint bottom left">
     <span class="block"><img src="img/blue_drop.png" alt="no lead drop" class="w12 inline"> Lead content under 1 µg/L</span>
     <span class="block"><img src="img/red_drop.png" alt="lead present drop" class="w12 inline"> Lead content over 1 µg/L at one or more sites</span>
   </div>
