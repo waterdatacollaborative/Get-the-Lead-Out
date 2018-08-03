@@ -20622,10 +20622,10 @@ map.on('load', () => {
   // }, 'waterway-label')
 
 
-  map.loadImage('/img/blue_drop.png', (error, image) => {
+  map.loadImage('img/blue_drop.png', (error, image) => {
    if (error) throw error;
      map.addImage('blueDrop', image);
-   map.loadImage('/img/red_drop.png', (error, image) => {
+   map.loadImage('img/red_drop.png', (error, image) => {
      map.addImage('redDrop', image);
      map.addLayer({
        'id': 'schoolLayer',
