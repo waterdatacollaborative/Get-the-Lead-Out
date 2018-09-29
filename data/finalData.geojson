@@ -1,0 +1,797 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4822998,37.7830048 ]
+    },
+    "properties": {
+    "school_name":"Alamo Elementary School",
+    "date":"2017-04-12",
+    "ppb":2.66
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4381943,37.7536812 ]
+    },
+    "properties": {
+    "school_name":"Alvarado Elementary School",
+    "date":"2017-12-15",
+    "ppb":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4488297,37.7453156 ]
+    },
+    "properties": {
+    "school_name":"Asawa (Ruth) SF School of the Arts",
+    "date":"2018-03-14",
+    "ppb":1.2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4413986,37.7211418 ]
+    },
+    "properties": {
+    "school_name":"Balboa High School",
+    "date":"2018-03-06",
+    "ppb":2.9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4004898,37.7805595 ]
+    },
+    "properties": {
+    "school_name":"Bessie Carmichael Middle School",
+    "date":"2017-12-13",
+    "ppb":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3892212,37.7178993 ]
+    },
+    "properties": {
+    "school_name":"Bret Harte Elementary School",
+    "date":"2017-09-29",
+    "ppb":1.94
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4046936,37.7514534 ]
+    },
+    "properties": {
+    "school_name":"Bryant Elementary School",
+    "date":"2017-04-21",
+    "ppb":11.7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4201813,37.7530327 ]
+    },
+    "properties": {
+    "school_name":"Buena Vista/Horace Mann K-8",
+    "date":"2018-01-17",
+    "ppb":5.5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4065552,37.7215462 ]
+    },
+    "properties": {
+    "school_name":"Burton (Phillip and Sala) Academic High School",
+    "date":"2018-03-20",
+    "ppb":1.2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4040604,37.7947693 ]
+    },
+    "properties": {
+    "school_name":"Chinese Ed. Center Elementary School",
+    "date":"2017-09-26",
+    "ppb":9.67
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4442749,37.7698288 ]
+    },
+    "properties": {
+    "school_name":"Chinese Immersion School",
+    "date":"2017-09-27",
+    "ppb":1.38
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4246674,37.7187843 ]
+    },
+    "properties": {
+    "school_name":"City Arts & Tech High School",
+    "date":"2018-03-06",
+    "ppb":1.8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4229431,37.7802963 ]
+    },
+    "properties": {
+    "school_name":"Civic Center SS",
+    "date":"2017-09-28",
+    "ppb":1.46
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4432373,37.80336 ]
+    },
+    "properties": {
+    "school_name":"Claire B. Lilienthal 3-8 Scott Campus",
+    "date":"2017-12-13",
+    "ppb":1.3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4704819,37.7312584 ]
+    },
+    "properties": {
+    "school_name":"Commodore Sloat Elementary School",
+    "date":"2017-04-11",
+    "ppb":1.4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4360733,37.7798042 ]
+    },
+    "properties": {
+    "school_name":"Creative Arts Charter",
+    "date":"2017-12-13",
+    "ppb":1.5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4007721,37.7620087 ]
+    },
+    "properties": {
+    "school_name":"Daniel Webster Elementary School",
+    "date":"2017-09-20",
+    "ppb":4.14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4037018,37.7613983 ]
+    },
+    "properties": {
+    "school_name":"Downtown High School",
+    "date":"2017-12-16",
+    "ppb":660
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4250107,37.7404327 ]
+    },
+    "properties": {
+    "school_name":"Fairmount Elementary School",
+    "date":"2017-10-06",
+    "ppb":2.16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4241486,37.803791 ]
+    },
+    "properties": {
+    "school_name":"Galileo High School",
+    "date":"2017-12-13",
+    "ppb":1.5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4366913,37.7832642 ]
+    },
+    "properties": {
+    "school_name":"Gateway High School",
+    "date":"2018-01-18",
+    "ppb":2.1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4650269,37.7838554 ]
+    },
+    "properties": {
+    "school_name":"George Peabody Elementary School",
+    "date":"2017-10-04",
+    "ppb":8.17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3853378,37.7316666 ]
+    },
+    "properties": {
+    "school_name":"George Washington Carver Elementary School",
+    "date":"2017-04-20",
+    "ppb":5.17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4356232,37.7331314 ]
+    },
+    "properties": {
+    "school_name":"Glen Park Elementary School",
+    "date":"2017-09-26",
+    "ppb":1.93
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4504242,37.7634926 ]
+    },
+    "properties": {
+    "school_name":"Grattan Elementary School",
+    "date":"2017-10-03",
+    "ppb":3.24
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4186859,37.7284126 ]
+    },
+    "properties": {
+    "school_name":"Hillcrest Elementary School",
+    "date":"2017-09-29",
+    "ppb":6.05
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4096298,37.7504539 ]
+    },
+    "properties": {
+    "school_name":"Hilltop High School (Pregnant Minors)",
+    "date":"2017-12-05",
+    "ppb":1.1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4689636,37.7455559 ]
+    },
+    "properties": {
+    "school_name":"Hoover (Herbert) Middle School",
+    "date":"2017-10-12",
+    "ppb":2.01
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4006882,37.7617035 ]
+    },
+    "properties": {
+    "school_name":"International Study High School",
+    "date":"2017-11-01",
+    "ppb":5600
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4110413,37.7976189 ]
+    },
+    "properties": {
+    "school_name":"Jean Parker Elementary School",
+    "date":"2017-09-28",
+    "ppb":1.45
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4767303,37.7630653 ]
+    },
+    "properties": {
+    "school_name":"Jefferson Elementary School",
+    "date":"2017-09-28",
+    "ppb":2.79
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4032211,37.7986107 ]
+    },
+    "properties": {
+    "school_name":"John Yehall Chin Elementary School",
+    "date":"2017-04-21",
+    "ppb":3.42
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.425148,37.7195358 ]
+    },
+    "properties": {
+    "school_name":"Jordan (June) School for Equity",
+    "date":"2018-03-08",
+    "ppb":2.2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4666748,37.7167816 ]
+    },
+    "properties": {
+    "school_name":"Jose Ortega Elementary School",
+    "date":"2017-09-27",
+    "ppb":1.66
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4058075,37.7277412 ]
+    },
+    "properties": {
+    "school_name":"King Jr. (Martin Luther) Academic Middle School",
+    "date":"2018-01-30",
+    "ppb":1.3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3965607,37.719532 ]
+    },
+    "properties": {
+    "school_name":"KIPP Bayview Academy",
+    "date":"2018-03-20",
+    "ppb":1.6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.382256,37.732386 ]
+    },
+    "properties": {
+    "school_name":"KIPP San Francisco College Prep",
+    "date":"2018-03-20",
+    "ppb":1.3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4968872,37.7770691 ]
+    },
+    "properties": {
+    "school_name":"Lafayette Elementary School",
+    "date":"2017-12-15",
+    "ppb":4.4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4854202,37.7303238 ]
+    },
+    "properties": {
+    "school_name":"Lakeshore Elementary School",
+    "date":"2017-04-21",
+    "ppb":1.03
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4890976,37.758049 ]
+    },
+    "properties": {
+    "school_name":"Lawton Alternative Elementary School",
+    "date":"2017-12-14",
+    "ppb":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3679962,37.8255119 ]
+    },
+    "properties": {
+    "school_name":"Life Learning Academic Charter School",
+    "date":"2018-04-13",
+    "ppb":45
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4467392,37.7104225 ]
+    },
+    "properties": {
+    "school_name":"Longfellow Elementary School",
+    "date":"2017-12-14",
+    "ppb":5.9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4830551,37.729435 ]
+    },
+    "properties": {
+    "school_name":"Lowell High School",
+    "date":"2018-03-07",
+    "ppb":4.3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3809662,37.7342377 ]
+    },
+    "properties": {
+    "school_name":"Malcolm X Elementary School",
+    "date":"2017-11-01",
+    "ppb":538
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4354782,37.8018265 ]
+    },
+    "properties": {
+    "school_name":"Marina Middle School",
+    "date":"2018-01-25",
+    "ppb":1.3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4190216,37.7662888 ]
+    },
+    "properties": {
+    "school_name":"Marshall Elementary School",
+    "date":"2017-10-13",
+    "ppb":3.94
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4016495,37.7363091 ]
+    },
+    "properties": {
+    "school_name":"Marshall (Thurgood) High School",
+    "date":"2017-12-13",
+    "ppb":7.7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4362793,37.7668839 ]
+    },
+    "properties": {
+    "school_name":"McKinley Elementary School",
+    "date":"2017-04-20",
+    "ppb":1.27
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4501877,37.738636 ]
+    },
+    "properties": {
+    "school_name":"Miraloma Elementary School",
+    "date":"2017-10-13",
+    "ppb":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4273071,37.7620201 ]
+    },
+    "properties": {
+    "school_name":"Mission High School",
+    "date":"2018-03-01",
+    "ppb":1.2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.400623,37.76172 ]
+    },
+    "properties": {
+    "school_name":"New School of San Francisco",
+    "date":"2017-11-15",
+    "ppb":52.6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.5036545,37.7538338 ]
+    },
+    "properties": {
+    "school_name":"Noriega Elementary School",
+    "date":"2017-12-01",
+    "ppb":4.2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4192505,37.7895203 ]
+    },
+    "properties": {
+    "school_name":"Redding Elementary School",
+    "date":"2017-10-17",
+    "ppb":11.9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.443222,37.7548103 ]
+    },
+    "properties": {
+    "school_name":"Rooftop Burnett Campus",
+    "date":"2017-10-12",
+    "ppb":4.82
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4444962,37.7573967 ]
+    },
+    "properties": {
+    "school_name":"Rooftop Mayeda Campus",
+    "date":"2017-10-12",
+    "ppb":2.34
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4583511,37.78228 ]
+    },
+    "properties": {
+    "school_name":"Roosevelt Middle School",
+    "date":"2017-10-03",
+    "ppb":1.93
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4303589,37.7634544 ]
+    },
+    "properties": {
+    "school_name":"Sanchez Elementary School",
+    "date":"2017-04-19",
+    "ppb":1.8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4214859,37.7369118 ]
+    },
+    "properties": {
+    "school_name":"Serra (Junipero) Elementary School",
+    "date":"2017-12-15",
+    "ppb":1.6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4321365,37.7261047 ]
+    },
+    "properties": {
+    "school_name":"SF Community Alt",
+    "date":"2017-09-27",
+    "ppb":1.73
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.452907,37.745931 ]
+    },
+    "properties": {
+    "school_name":"SF County Court Woodside Learning Center",
+    "date":"2018-01-30",
+    "ppb":4.9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4596329,37.7144775 ]
+    },
+    "properties": {
+    "school_name":"Sheridan Elementary School",
+    "date":"2017-10-11",
+    "ppb":1.9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4261169,37.797802 ]
+    },
+    "properties": {
+    "school_name":"Sherman Elementary School",
+    "date":"2017-10-20",
+    "ppb":2.72
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4188156,37.7940063 ]
+    },
+    "properties": {
+    "school_name":"Spring Valley Elementary School",
+    "date":"2017-10-11",
+    "ppb":7.28
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4120789,37.715744 ]
+    },
+    "properties": {
+    "school_name":"Visitacion Valley Middle School",
+    "date":"2017-10-20",
+    "ppb":2.6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4459534,37.7806473 ]
+    },
+    "properties": {
+    "school_name":"Wallenberg (Raoul) Traditional High School",
+    "date":"2018-02-27",
+    "ppb":4.2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4643478,37.7428741 ]
+    },
+    "properties": {
+    "school_name":"West Portal Elementary School",
+    "date":"2017-11-02",
+    "ppb":403
+    }
+  }
+]
+}

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>California Water Challenge</title>
   <link href="https://api.mapbox.com/mapbox-assembly/v0.22.0/assembly.min.css" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   <!-- <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script> -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/5.1.5/turf.min.js"></script> -->
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
@@ -16,6 +16,7 @@
     body {
       margin:0;
       padding:0;
+      font-family: 'Noto Sans', sans-serif;
     }
 
     #map {
@@ -30,8 +31,10 @@
       top: 0;
       left: 0;
       width: 30%;
-      height: 50%;
-      padding: 10px;
+      height: 100%;
+      padding: 15px;
+      background-color: rgba(69, 87, 96, 0.72);
+      color: white;
     }
 
     #key {
@@ -45,6 +48,14 @@
 
 
     #img {
+      position: absolute;
+      z-index: 3;
+      right: 0;
+      top: 0;
+      background-color: rgba(255, 255, 255, 0.33);
+    }
+
+    .logo {
       height: 100px;
       width: auto;
     }
@@ -53,36 +64,46 @@
       text-align: center;
     }
 
+    .circle {
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+    }
+    .circle-blue {
+      background-color: #C8D2D3;
+    }
+
+    .circle-yellow {
+      background-color: #f2d434;
+    }
+
+    .circle-orange {
+      background-color: #eb980b;
+    }
+
+    .circle-red {
+      background-color: #eb470b;
+    }
+
   </style>
 </head>
-<body class="prose color-gray-dark">
+<body class="prose">
   <div id="map"></div>
-  <div id="key" class="py12 px12 bg-transparent
- opacity0"></div>
-  <div class="py24 px24 absolute bg-lighten50 bottom left">
-    <span class="block"><img src="img/blue_drop.png" alt="no lead drop" class="w12 inline"> Lead content under 1 µg/L</span>
-    <span class="block"><img src="img/red_drop.png" alt="lead present drop" class="w12 inline"> Lead content over 1 µg/L at one or more sites</span>
+  <div id="img">
+      <img class="logo" src="img/image.png" alt="logo">
   </div>
-  <div id="text" class="scroll-auto bg-lighten50">
-    <div class="center">
-      <img id="img" src="img/image.png" alt="logo">
-    </div>
-    <h4>There is no safe level of lead</h4>
 
-    <p>We know that even tiny amounts of lead can cause a permanent drop in a child's IQ.
-    Lead exposure is linked to behavioral issues, ADHD, anxiety and depression. </p>
+  <div id="text" class="scroll-auto">
+    <h2>Lead Levels in San Francisco Schools</h2>
+    <p>San Francisco Unified School District tested the school's drinking water for lead last year.
+    This map shows the highest lead levels detected at each school based on multiple sample sites and dates.</p>
 
-    <p>San Francisco was one of the first districts to test, and what they found was alarming. Several schools found very high levels of lead. A third of the schools detected some lead in the drinking water.
-    </p>
-
-    <h4>The solution?</h4>
-    <p>We need to get the lead out. Most of the lead found in school drinking water comes from the plumbing and pipes. In California, some lead was permitted in parts until 2010. While we are surrounded by lead in our environment, our children's health is at risk. Removing the old lead pipes and fixtures is the only way to ensure our children's health is protected. This will cost money, but our kid's health is worth it.</p>
-
-    <p>When we get the lead out, we make our children's future brighter and healthier. And that is worth paying for.</p>
-
-    <h4>Resources:</h4>
-    <p>Here is the link to the old press release with link to the back to school toolkit: https://calpirgedfund.org/resources/caf/back-school-toolkit</p>
-
+    <p>There is no safe level of lead, especially for children. Even small amounts can lower IQ. Damage from lead exposure is irreversible.</p>
+    <span class="block"><span  class="w12 inline-block circle circle-blue"></span> Lead content < 1 ppb</span>
+    <span class="block"><span class="w12 inline-block circle circle-yellow"></span> Lead content between 1 and 5 ppb</span>
+    <span class="block"><span  class="w12 inline-block circle circle-orange"></span> Lead content between 5 and 15 ppb</span>
+    <span class="block"><span class="w12 inline-block circle circle-red"></span> Lead content > 15 ppb</span>
+    <div id="key" class="py12 px12"></div>
   </div>
   <script src="app.js"></script>
 </body>
