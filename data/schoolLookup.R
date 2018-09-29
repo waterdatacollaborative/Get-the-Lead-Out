@@ -4,7 +4,6 @@ library(lubridate)
 lead <- read_csv('sfusd_lead_sampling.csv')
 glimpse(lead)
 
-
 l1 <- lead %>% 
   mutate(lead_present = ifelse(`Pb (µg/L)` == '< 1' | is.na(`Pb (µg/L)`), FALSE, TRUE)) %>% 
   filter(lead_present) %>% 
@@ -31,22 +30,35 @@ l1 %>%
 
 # just going to use the max sample per school to represent problem
 # using max reading from most recent test is the same as max overall sample for all but 5 schools
+no_lead <- lead %>% 
+  mutate(lead_present = ifelse(`Pb (µg/L)` == '< 1' | is.na(`Pb (µg/L)`), FALSE, TRUE)) %>% 
+  group_by(school_name, lat, lon) %>% 
+  summarise(lead_present = max(lead_present)) %>% 
+  ungroup() %>% 
+  filter(lead_present == 0) %>% 
+  select(school_name, lat, lon) %>% 
+  mutate(date = as.Date(NA), ppb = 0) %>% 
+  select(school_name, date, ppb, lat, lon)
 
 lead %>% 
   mutate(lead_present = ifelse(`Pb (µg/L)` == '< 1' | is.na(`Pb (µg/L)`), FALSE, TRUE)) %>% 
   filter(lead_present) %>% 
-  mutate(ppb = as.numeric(`Pb (µg/L)`), date = mdy(sample_date)) %>%
+  mutate(ppb = as.numeric(`Pb (µg/L)`),
+         date = mdy(sample_date)) %>% 
   select(school_name, date, ppb, lat, lon) %>% 
   group_by(school_name) %>% 
   filter(ppb == max(ppb)) %>% 
-  ungroup() %>% 
   unique() %>% 
+  filter(date == max(date)) %>% 
+  ungroup() %>% 
+  bind_rows(no_lead) %>% 
   mutate(school_name = str_replace(school_name, 'ES', 'Elementary School'),
          school_name = str_replace(school_name, 'MS', 'Middle School'),
          school_name = str_replace(school_name, 'HS', 'High School')) %>% 
   write_csv('app_data.csv')
 
-
+  
+  
 # looking at extremes
 lead %>%
   filter(school_name %in% c('New School of San Francisco', 'International Study HS')) %>% 
