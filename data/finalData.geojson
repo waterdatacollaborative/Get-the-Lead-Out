@@ -792,6 +792,786 @@
     "date":"2017-11-02",
     "ppb":403
     }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.448565,37.745314 ]
+    },
+    "properties": {
+    "school_name":"Academy (The) - SF @ McAteer",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4696808,37.7589645 ]
+    },
+    "properties": {
+    "school_name":"Alice Fong Yu Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4657822,37.7296715 ]
+    },
+    "properties": {
+    "school_name":"Aptos Middle School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4763107,37.7753067 ]
+    },
+    "properties": {
+    "school_name":"Argonne Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.406456,37.7763824 ]
+    },
+    "properties": {
+    "school_name":"Bessie Carmichael Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3995743,37.7364769 ]
+    },
+    "properties": {
+    "school_name":"Brown Jr. (Willie L) Middle School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4148788,37.754921 ]
+    },
+    "properties": {
+    "school_name":"Cesar Chavez Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4580154,37.7872009 ]
+    },
+    "properties": {
+    "school_name":"Claire B. Lilienthal K-2 Madison Campus",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4562683,37.7537537 ]
+    },
+    "properties": {
+    "school_name":"Clarendon Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4291916,37.7203407 ]
+    },
+    "properties": {
+    "school_name":"Cleveland Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.415092,37.801011 ]
+    },
+    "properties": {
+    "school_name":"Cooper (Sarah B) Children Center",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.481369,37.7396851 ]
+    },
+    "properties": {
+    "school_name":"D. Feinstein Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4431839,37.7213097 ]
+    },
+    "properties": {
+    "school_name":"Denman (James) Middle School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4395523,37.7876778 ]
+    },
+    "properties": {
+    "school_name":"Dr. William Cobb Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3938904,37.7317963 ]
+    },
+    "properties": {
+    "school_name":"Drew (Charles) College Prep.",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4260406,37.754467 ]
+    },
+    "properties": {
+    "school_name":"Edison Charter School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4073105,37.7273293 ]
+    },
+    "properties": {
+    "school_name":"Edward R. Taylor Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4293671,37.7635765 ]
+    },
+    "properties": {
+    "school_name":"Everett Middle School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4304886,37.725399 ]
+    },
+    "properties": {
+    "school_name":"Excelsior Monroe OST",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.5019989,37.7580986 ]
+    },
+    "properties": {
+    "school_name":"Francis Scott Key Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.410965,37.8045692 ]
+    },
+    "properties": {
+    "school_name":"Francisco Middle School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4644775,37.77631 ]
+    },
+    "properties": {
+    "school_name":"Frank McCoppin Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4359207,37.7794189 ]
+    },
+    "properties": {
+    "school_name":"Gateway Middle School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4126205,37.7567406 ]
+    },
+    "properties": {
+    "school_name":"George Moscone Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.496666,37.7503014 ]
+    },
+    "properties": {
+    "school_name":"Giannini (A.P.) Middle School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4340286,37.7101822 ]
+    },
+    "properties": {
+    "school_name":"Guadalupe Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4364471,37.7589264 ]
+    },
+    "properties": {
+    "school_name":"Harvey Milk Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.388588,37.7340851 ]
+    },
+    "properties": {
+    "school_name":"Havard (Leona M) Early Education",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4635849,37.7632256 ]
+    },
+    "properties": {
+    "school_name":"Independence High School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.483319,37.762367 ]
+    },
+    "properties": {
+    "school_name":"Jefferson Early Education",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4286804,37.7737579 ]
+    },
+    "properties": {
+    "school_name":"John Muir Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.413559,37.7595139 ]
+    },
+    "properties": {
+    "school_name":"John O'Connell High School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.436904,37.783472 ]
+    },
+    "properties": {
+    "school_name":"KIPP San Francisco Bay Academy",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4088058,37.7943993 ]
+    },
+    "properties": {
+    "school_name":"Lau (Gordon J.) Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.444888,37.721492 ]
+    },
+    "properties": {
+    "school_name":"Leadership High School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4119644,37.7477455 ]
+    },
+    "properties": {
+    "school_name":"Leonard R. Flynn Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.432785,37.7493629 ]
+    },
+    "properties": {
+    "school_name":"Lick (James) Middle School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4802399,37.7465935 ]
+    },
+    "properties": {
+    "school_name":"Lincoln (Abraham) High School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.428012,37.755274 ]
+    },
+    "properties": {
+    "school_name":"Mahler (Theresa S) Children Center",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4231873,37.713131 ]
+    },
+    "properties": {
+    "school_name":"McClaren (John) Children Center",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4314346,37.7422028 ]
+    },
+    "properties": {
+    "school_name":"Mission Ed Center",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.408721,37.755173 ]
+    },
+    "properties": {
+    "school_name":"Mission Preparatory Charter School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.450264,37.7738838 ]
+    },
+    "properties": {
+    "school_name":"New Tradition Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4131165,37.7376137 ]
+    },
+    "properties": {
+    "school_name":"Paul Revere Middle School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4611053,37.7975197 ]
+    },
+    "properties": {
+    "school_name":"Presidio Early Education",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.489624,37.7808647 ]
+    },
+    "properties": {
+    "school_name":"Presidio Middle School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4927597,37.7488441 ]
+    },
+    "properties": {
+    "school_name":"Robert L Stevenson Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4185562,37.7498207 ]
+    },
+    "properties": {
+    "school_name":"Zaida T. Rodriguez Early Education",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4295044,37.7830086 ]
+    },
+    "properties": {
+    "school_name":"Rosa Parks Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4447098,37.7216454 ]
+    },
+    "properties": {
+    "school_name":"San Miguel Children Center",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.424871,37.740029 ]
+    },
+    "properties": {
+    "school_name":"Serra, Junipero (Annex) Early Education School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.433586,37.79294 ]
+    },
+    "properties": {
+    "school_name":"SF Public Montessori Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3991928,37.7532883 ]
+    },
+    "properties": {
+    "school_name":"Starr King Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4090805,37.7950821 ]
+    },
+    "properties": {
+    "school_name":"Stockton (Commodore) Children Center",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4482574,37.7302933 ]
+    },
+    "properties": {
+    "school_name":"Sunnyside Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4991531,37.7505226 ]
+    },
+    "properties": {
+    "school_name":"Sunset Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4714508,37.7836037 ]
+    },
+    "properties": {
+    "school_name":"Sutro Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4197769,37.7817955 ]
+    },
+    "properties": {
+    "school_name":"Tenderloin Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4345627,37.7994194 ]
+    },
+    "properties": {
+    "school_name":"Tule Elk Park",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4993973,37.7373161 ]
+    },
+    "properties": {
+    "school_name":"Ulloa Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4098969,37.7125244 ]
+    },
+    "properties": {
+    "school_name":"Visitacion Valley Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4910126,37.7779045 ]
+    },
+    "properties": {
+    "school_name":"Washington (George) High School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.42987,37.783291 ]
+    },
+    "properties": {
+    "school_name":"Weill (Raphael) Children Center",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4338989,37.775013 ]
+    },
+    "properties": {
+    "school_name":"Ida B Wells High School",
+    "date":"NA",
+    "ppb":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4166107,37.80196 ]
+    },
+    "properties": {
+    "school_name":"Yick Wo Elementary School",
+    "date":"NA",
+    "ppb":0
+    }
   }
 ]
 }

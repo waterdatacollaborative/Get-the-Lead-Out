@@ -5,18 +5,15 @@
   <title>California Water Challenge</title>
   <link href="https://api.mapbox.com/mapbox-assembly/v0.22.0/assembly.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-  <!-- <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/5.1.5/turf.min.js"></script> -->
-  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
-  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
-  <!-- <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.2.0/mapbox-gl-geocoder.min.js'></script>
-<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.2.0/mapbox-gl-geocoder.css' type='text/css' /> -->
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://d3js.org/d3.v5.min.js"></script>
   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <style>
     body {
       margin:0;
       padding:0;
-      font-family: 'Noto Sans', sans-serif;
+      font-family: "Noto Sans", sans-serif;
     }
 
     #map {
@@ -37,15 +34,6 @@
       color: white;
     }
 
-    #key {
-      position: absolute;
-      top:0;
-      right:0;
-      width:30%;
-      height:100%;
-      overflow: auto;
-    }
-
 
     #img {
       position: absolute;
@@ -53,6 +41,11 @@
       right: 0;
       top: 0;
       background-color: rgba(255, 255, 255, 0.33);
+    }
+
+    #dashboard {
+      height: 200px;
+      text-align: center;
     }
 
     .logo {
@@ -67,6 +60,7 @@
     .circle {
       height: 12px;
       width: 12px;
+      border: 1px solid rgb(69, 69, 69);
       border-radius: 50%;
     }
     .circle-blue {
@@ -85,6 +79,19 @@
       background-color: #eb470b;
     }
 
+    .icon-credit {
+      position: absolute;
+      right: 280px;
+      bottom: 5px;
+      font-size: 9px;
+      line-height: 10px;
+    }
+
+    .credit {
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+
   </style>
 </head>
 <body class="prose">
@@ -92,18 +99,27 @@
   <div id="img">
       <img class="logo" src="img/image.png" alt="logo">
   </div>
-
+  <div class="icon-credit">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   <div id="text" class="scroll-auto">
     <h2>Lead Levels in San Francisco Schools</h2>
-    <p>San Francisco Unified School District tested the school's drinking water for lead last year.
+    <p>San Francisco Unified School District tested the school"s drinking water for lead last year.
     This map shows the highest lead levels detected at each school based on multiple sample sites and dates.</p>
 
     <p>There is no safe level of lead, especially for children. Even small amounts can lower IQ. Damage from lead exposure is irreversible.</p>
-    <span class="block"><span  class="w12 inline-block circle circle-blue"></span> Lead content < 1 ppb</span>
-    <span class="block"><span class="w12 inline-block circle circle-yellow"></span> Lead content between 1 and 5 ppb</span>
-    <span class="block"><span  class="w12 inline-block circle circle-orange"></span> Lead content between 5 and 15 ppb</span>
-    <span class="block"><span class="w12 inline-block circle circle-red"></span> Lead content > 15 ppb</span>
-    <div id="key" class="py12 px12"></div>
+
+    <div class="credit">
+      <span class="block">Data Wrangling: <a target="_blank" href="https://github.com/thesadie" class="color-blue-faint">Sadie Gill</a> @ Flowest.</span>
+      <span class="block">Mapping, front-end, data viz: <a target="_blank"href="https://lobenichou.com" class="color-blue-faint">Lo Bénichou </a>@ Mapbox.</span>
+    </div>
+
+    <span class="block"><div  class="inline-block circle circle-blue"></div> Lead content < 1 ppb</span>
+    <span class="block"><span class="inline-block circle circle-yellow"></span> Lead content between 1 and 5 ppb</span>
+    <span class="block"><span  class="inline-block circle circle-orange"></span> Lead content between 5 and 15 ppb</span>
+    <span class="block"><span class="inline-block circle circle-red"></span> Lead content > 15 ppb</span>
+    <div id="key" class="py12"></div>
+    <div id="dashboard">
+
+    </div>
   </div>
   <script src="app.js"></script>
 </body>

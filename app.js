@@ -1,21 +1,21 @@
-// let hashmap = {};
-//  schools.forEach((row) => {
-//    const id = `${row.school_district}${row.id.toString()}`
-//    if (hashmap.hasOwnProperty(id)) {
-//      hashmap[id].push(row)
-//    } else {
-//      hashmap[id] = [];
-//      hashmap[id].push(row);
-//    }
-//  });
-
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FkaWUtZ2lsbCIsImEiOiJjamtlOXhsdTczOWJiM3dtazU2ODZiZ2dzIn0.20B7rRYqEidFxaHOXuGKkA';
 const map = new mapboxgl.Map({
-    container: 'map', // container id
-    style: 'mapbox://styles/sadie-gill/cjkeaodtodv792sqkkg4yara2?fresh=true', // stylesheet location
-    center: [-122.473373, 37.767579], // starting position [lng, lat]
-    zoom: 11.5 // starting zoom
+  container: 'map', // container id
+  style: 'mapbox://styles/sadie-gill/cjkeaodtodv792sqkkg4yara2?fresh=true', // stylesheet location
+  center: [
+    -122.473373, 37.767579
+  ], // starting position [lng, lat]
+  zoom: 11.5 // starting zoom
 });
+
+const range = d3.scaleThreshold().domain([1, 5, 15]).range(['#C8D2D3', '#f2d434', '#eb980b', '#eb470b']);
+
+const imagePath = {
+  '#C8D2D3': 'img/school-blue.svg',
+  '#f2d434': 'img/school-yellow.svg',
+  '#eb980b': 'img/school-orange.svg',
+  '#eb470b': 'img/school-red.svg',
+};
 
 map.on('load', () => {
 
@@ -29,25 +29,52 @@ map.on('load', () => {
     url: 'mapbox://sadie-gill.076g5x2v'
   });
 
-
   map.addLayer({
     'id': 'schoolLayer',
     'type': 'circle',
     'source': 'schools',
     'source-layer': 'schools',
     'paint': {
-      'circle-radius': 5,
+      'circle-radius': [
+        'case',
+        [
+          'boolean',
+          [
+            'feature-state', 'hover'
+          ],
+          false
+        ],
+        7,
+        5
+      ],
+      'circle-stroke-color': 'rgb(69, 69, 69)',
+      'circle-stroke-width': [
+        'case',
+        [
+          'boolean',
+          [
+            'feature-state', 'hover'
+          ],
+          false
+        ],
+        8,
+        2
+      ],
       'circle-color': [
         'step',
-        ['get', 'ppb'],
+        [
+          'get', 'ppb'
+        ],
         '#C8D2D3',
-        1, '#f2d434',
-        5, '#eb980b',
-        15, '#eb470b',
+        1,
+        '#f2d434',
+        5,
+        '#eb980b',
+        15,
+        '#eb470b'
       ]
     }
   }, 'waterway-label')
-
 
   map.addLayer({
     'id': 'schoolLayerHover',
@@ -60,68 +87,104 @@ map.on('load', () => {
     }
   }, 'waterway-label')
 
+  const updateDashboard = (id) => {
+    const dash = document.getElementById('dashboard');
+    const ppb = document.getElementById(id).value;
+    const color = range(ppb);
+    const selection = document.getElementById(id);
+    selection.selected = true;
+    dash.innerHTML = `
+    <img class='w120' src='${imagePath[color]}' alt='school icon' />
+    <div><span style='color:${color};' class='txt-h2'>${ppb == 0 ? '< 1' : ppb}</span><span style='color:${color};'> ppb</span></div>
+    <div><span class='txt-h4'>${selection.text}</span></div>`
+  }
 
-let hoveredId = null;
+  let hoveredId = null;
 
-map.on('mouseenter', 'schoolLayerHover', function(e) {
-     // Change the cursor style as a UI indicator.
-    map.getCanvas().style.cursor = 'pointer';
-    if (document.getElementById('key').classList.contains('opacity0')) {
-      document.getElementById('key').classList.remove('opacity0');
-      document.getElementById('key').classList.add('opacity100');
+  const updateMap = (id) => {
+    if (hoveredId) {
+      // set the hover attribute to false with feature state
+      map.setFeatureState({
+        source: 'schools',
+        sourceLayer: 'schools',
+        id: hoveredId
+      }, {hover: false});
     }
 
-    if (e.features[0].properties.id === hoveredId) return;
-    hoveredId = e.features[0].properties.id;
-    map.setFilter('schoolLayerHover', ['==', 'id', hoveredId]);
-    map.setLayoutProperty('schoolLayerHover', 'icon-size', .25)
-    const schoolList = hashmap[`SFUSD${e.features[0].properties.id}`];
-    console.log(schoolList);
-    // {
-    //   "fw_id": 931,
-    //   "school_district": "SFUSD",
-    //   "school_name": "Yick Wo ES",
-    //   "sample_point_name": "Yick Wo ES - Site E",
-    //   "sample_date": "NA",
-    //   "Pb (µg/L)": "NA",
-    //   "result": "NA",
-    //   "investigative_sample_number": "NA",
-    //   "comments": "Site not indicated by school",
-    //   "geo_school_name": "Yick Wo Elementary School",
-    //   "address": "2245 JONES ST, SAN FRANCISCO, CA 94133",
-    //   "lat": 37.80196,
-    //   "lon": -122.4166107,
-    //   "id": 131,
-    //   "lead_present": "FALSE"
-    // }
-    const content = `
-      <h5>${schoolList[0].geo_school_name}</h5>
-      <table class='table table--fixed table--dark bg-darken50'>
-        <thead>
-          <tr>
-            <th>Site</th>
-            <th>Sample Date</th>
-            <th>Pb (µg/L)</th>
-          </tr>
-        </thead>
-        <tbody>
-      ${schoolList.map(school  =>
-        `<tr>
-          <td>${school.sample_point_name}</td>
-          <td>${school.sample_date}</td>
-          <td>${school['Pb (µg/L)']}</td>
-        </tr>`
-    ).join('')}
-    </tbody>
-  </table>`
-    console.log(content);
-    document.getElementById('key').innerHTML = content;
- });
+    hoveredId = id;
+    // set the hover attribute to true with feature state
+    map.setFeatureState({
+      source: 'schools',
+      sourceLayer: 'schools',
+      id: id
+    }, {hover: true});
+  }
 
- map.on('mouseleave', 'schoolLayer', function() {
-    hoveredId = null;
-    map.getCanvas().style.cursor = '';
-    map.setFilter('schoolLayerHover', ['==', 'id', '']);
-    map.setLayoutProperty('schoolLayerHover', 'icon-size', .1)
- });
-})
+  const setAfterLoad = (e) => {
+    if (e.sourceId === 'schools' && e.isSourceLoaded) {
+      const features = map.queryRenderedFeatures({layers: ['schoolLayer']});
+      const divSelect = document.createElement('div');
+      const arrow = document.createElement('div');
+      arrow.className = 'select-arrow color-gray-dark'
+      divSelect.className = 'select-container mt6';
+      const select = document.createElement('select');
+      select.className = 'select select--white color-gray-dark';
+      select.id = 'SchoolList';
+      select.innerHTML = `
+    <option disabled selected value>Select A school</option>
+    ${features.map((f) => {
+        return `<option id='${f.id}' value='${f.properties.ppb}'>
+      ${f.properties.school_name}
+      </option>`}).join(' ')}`;
+        divSelect.append(select);
+        divSelect.append(arrow)
+        document.getElementById('key').append(divSelect);
+        document.getElementById('SchoolList').addEventListener('change', (e) => {
+          const id = document.getElementById('SchoolList').options[document.getElementById('SchoolList').selectedIndex].id
+          updateDashboard(id);
+          updateMap(id)
+        })
+        map.off('sourcedata', setAfterLoad);
+      }}
+
+    if (map.isSourceLoaded('schools')) {
+      setAfterLoad()
+    } else {
+      map.on('sourcedata', setAfterLoad);
+    }
+
+
+    map.on('mouseenter', 'schoolLayerHover', function(e) {
+      map.getCanvas().style.cursor = 'pointer';
+      if (e.features.length > 0) {
+        if (hoveredId) {
+          // set the hover attribute to false with feature state
+          map.setFeatureState({
+            source: 'schools',
+            sourceLayer: 'schools',
+            id: hoveredId
+          }, {hover: false});
+        }
+
+        hoveredId = e.features[0].id;
+        // set the hover attribute to true with feature state
+        map.setFeatureState({
+          source: 'schools',
+          sourceLayer: 'schools',
+          id: hoveredId
+        }, {hover: true});
+
+        updateDashboard(hoveredId);
+      }
+    });
+
+    map.on('mouseleave', 'schoolLayerHover', function() {
+      map.getCanvas().style.cursor = '';
+      map.setFeatureState({
+        source: 'schools',
+        sourceLayer: 'schools',
+        id: hoveredId
+      }, {hover: false});
+      hoveredId = null;
+    });
+  })
