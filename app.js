@@ -130,6 +130,12 @@ map.on('load', () => {
       const select = document.createElement('select');
       select.className = 'select select--white color-gray-dark';
       select.id = 'SchoolList';
+      const sortAlpha = (data) => {
+        return data.sort((x, y) => {
+           return d3.ascending(x.properties.school_name, y.properties.school_name);
+        });
+      }
+      sortAlpha(features);
       select.innerHTML = `
     <option disabled selected value>Select A school</option>
     ${features.map((f) => {
