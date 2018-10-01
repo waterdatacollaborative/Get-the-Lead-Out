@@ -1,7 +1,7 @@
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FkaWUtZ2lsbCIsImEiOiJjamtlOXhsdTczOWJiM3dtazU2ODZiZ2dzIn0.20B7rRYqEidFxaHOXuGKkA';
 const map = new mapboxgl.Map({
   container: 'map', // container id
-  style: 'mapbox://styles/sadie-gill/cjkeaodtodv792sqkkg4yara2?fresh=true', // stylesheet location
+  style: 'mapbox://styles/sadie-gill/cjkeaodtodv792sqkkg4yara2', // stylesheet location
   center: [
     -122.473373, 37.767579
   ], // starting position [lng, lat]
@@ -14,7 +14,7 @@ const imagePath = {
   '#C8D2D3': 'img/school-blue.svg',
   '#f2d434': 'img/school-yellow.svg',
   '#eb980b': 'img/school-orange.svg',
-  '#eb470b': 'img/school-red.svg',
+  '#eb470b': 'img/school-red.svg'
 };
 
 map.on('load', () => {
@@ -95,7 +95,9 @@ map.on('load', () => {
     selection.selected = true;
     dash.innerHTML = `
     <img class='w120' src='${imagePath[color]}' alt='school icon' />
-    <div><span style='color:${color};' class='txt-h2'>${ppb == 0 ? '< 1' : ppb}</span><span style='color:${color};'> ppb</span></div>
+    <div><span style='color:${color};' class='txt-h2'>${ppb == 0
+      ? '< 1'
+      : ppb}</span><span style='color:${color};'> ppb</span></div>
     <div><span class='txt-h4'>${selection.text}</span></div>`
   }
 
@@ -125,23 +127,23 @@ map.on('load', () => {
       const features = map.queryRenderedFeatures({layers: ['schoolLayer']});
       const divSelect = document.createElement('div');
       const arrow = document.createElement('div');
+      const select = document.createElement('select');
       arrow.className = 'select-arrow color-gray-dark'
       divSelect.className = 'select-container mt6';
-      const select = document.createElement('select');
       select.className = 'select select--white color-gray-dark';
       select.id = 'SchoolList';
       const sortAlpha = (data) => {
         return data.sort((x, y) => {
-           return d3.ascending(x.properties.school_name, y.properties.school_name);
+          return d3.ascending(x.properties.school_name, y.properties.school_name);
         });
       }
       sortAlpha(features);
       select.innerHTML = `
-    <option disabled selected value>Select A school</option>
-    ${features.map((f) => {
+        <option disabled selected value>Select A school</option>
+        ${features.map((f) => {
         return `<option id='${f.id}' value='${f.properties.ppb}'>
-      ${f.properties.school_name}
-      </option>`}).join(' ')}`;
+          ${f.properties.school_name}
+          </option>`}).join(' ')}`;
         divSelect.append(select);
         divSelect.append(arrow)
         document.getElementById('key').append(divSelect);
@@ -158,7 +160,6 @@ map.on('load', () => {
     } else {
       map.on('sourcedata', setAfterLoad);
     }
-
 
     map.on('mouseenter', 'schoolLayerHover', function(e) {
       map.getCanvas().style.cursor = 'pointer';
