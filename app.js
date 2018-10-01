@@ -44,10 +44,10 @@ map.on('load', () => {
           ],
           false
         ],
-        7,
+        9,
         5
       ],
-      'circle-stroke-color': 'rgb(69, 69, 69)',
+      'circle-stroke-color': 'rgba(47, 47, 47, 0.65)',
       'circle-stroke-width': [
         'case',
         [
@@ -57,7 +57,7 @@ map.on('load', () => {
           ],
           false
         ],
-        8,
+        15,
         2
       ],
       'circle-color': [
@@ -74,7 +74,7 @@ map.on('load', () => {
         '#eb470b'
       ]
     }
-  }, 'waterway-label')
+  })
 
   map.addLayer({
     'id': 'schoolLayerHover',
@@ -85,7 +85,7 @@ map.on('load', () => {
       'circle-radius': 5,
       'circle-color': 'rgba(68, 91, 244, 0)'
     }
-  }, 'waterway-label')
+  })
 
   const updateDashboard = (id) => {
     const dash = document.getElementById('dashboard');
@@ -183,14 +183,14 @@ map.on('load', () => {
         updateDashboard(hoveredId);
       }
     });
-
-    map.on('mouseleave', 'schoolLayerHover', function() {
-      map.getCanvas().style.cursor = '';
-      map.setFeatureState({
-        source: 'schools',
-        sourceLayer: 'schools',
-        id: hoveredId
-      }, {hover: false});
-      hoveredId = null;
-    });
+    //
+    // map.on('mouseleave', 'schoolLayerHover', function() {
+    //   map.getCanvas().style.cursor = '';
+    //   map.setFeatureState({
+    //     source: 'schools',
+    //     sourceLayer: 'schools',
+    //     id: hoveredId
+    //   }, {hover: false});
+    //   hoveredId = null;
+    // });
   })
