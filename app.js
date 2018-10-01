@@ -130,7 +130,7 @@ map.on('load', () => {
       const select = document.createElement('select');
       arrow.className = 'select-arrow color-gray-dark'
       divSelect.className = 'select-container mt6';
-      select.className = 'select select--white color-gray-dark';
+      select.className = 'select select--s select--white color-gray-dark';
       select.id = 'SchoolList';
       const sortAlpha = (data) => {
         return data.sort((x, y) => {
